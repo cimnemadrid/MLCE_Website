@@ -34,14 +34,14 @@ Do not invent specific achievements, current memberships, positions, publication
 
 Keep the current simple site and its main navigation:
 
-- Home
-- Research
-- People
-- Projects
-- Publications
-- Friends & Collaborators
+- Home (`index.html`): group identity, About Us and the three Research Areas.
+- Research (`research.html`): Methods & Technologies.
+- People (`people.html`): Researchers and PhD Students.
+- Projects (`projects.html`): Selected Projects.
+- Publications (`publications.html`): Selected Publications and academic profile links.
+- Friends & Collaborators (`friends.html`): collaborator profiles.
 
-Contact information may be placed in the footer. Do not create additional pages, menu items or sections without an explicit request. The site currently uses a single-page structure with anchor links; preserve this until instructed otherwise.
+Contact information may be placed in the footer. Do not create additional pages, menu items or sections without an explicit request. Preserve the six-page static structure and the single shared `styles.css`. Use the same navigation and footer on every page, with relative page links and `aria-current="page"` on the current navigation item. Keep duplicated navigation and footer markup synchronized manually; no build step is required.
 
 ## Technical constraints
 
@@ -70,7 +70,7 @@ Contact information may be placed in the footer. Do not create additional pages,
 - Provide meaningful alt text for informative images and empty alt text for purely decorative ones.
 - Ensure keyboard accessibility, visible focus states and readable contrast.
 - Respect `prefers-reduced-motion` where motion is used.
-- Check anchor navigation, particularly offsets beneath the sticky header on small screens.
+- Check links between all six pages, current-page highlighting, and the skip-to-content anchor beneath the sticky header on small screens.
 - Keep HTML and CSS readable and formatted for reviewable Git diffs.
 
 ## Workflow for Codex

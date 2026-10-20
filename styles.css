@@ -23,6 +23,9 @@ section[id] {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
   line-height: 1.65;
@@ -32,6 +35,21 @@ body {
 
 a {
   color: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+nav a[aria-current="page"] {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
 }
 
 .container {
@@ -152,7 +170,8 @@ nav a:hover,
   background: #f6f9fa;
 }
 
-.section h2 {
+.section > h2,
+.page-title {
   font-size: clamp(30px, 4vw, 42px);
   line-height: 1.15;
   letter-spacing: -.035em;
@@ -186,6 +205,7 @@ nav a:hover,
   color: var(--blue);
 }
 
+.card h2,
 .card h3 {
   font-size: 22px;
   letter-spacing: -.025em;
@@ -209,6 +229,11 @@ nav a:hover,
 .methods p {
   color: #526675;
   margin: 6px 0 0;
+}
+
+.methods h2 {
+  margin: 0;
+  font-size: 18px;
 }
 
 .muted {
@@ -246,6 +271,7 @@ nav a:hover,
   font-size: 13px;
 }
 
+.person-card h2,
 .person-card h3,
 .person-card h4 {
   margin: 20px 0 8px;
@@ -281,7 +307,7 @@ nav a:hover,
   overflow-wrap: anywhere;
 }
 
-.project-card h3 {
+.project-card h2 {
   margin-top: 0;
   color: var(--blue);
 }
@@ -290,7 +316,7 @@ nav a:hover,
   font-size: 13px;
 }
 
-.project-card h4 {
+.project-card h3 {
   margin: 20px 0 12px;
   font-size: 18px;
   line-height: 1.35;
@@ -320,7 +346,7 @@ nav a:hover,
   margin-bottom: 28px;
 }
 
-.publications-list h3 {
+.publications-list h2 {
   margin: 0 0 8px;
   font-size: 18px;
   line-height: 1.4;
