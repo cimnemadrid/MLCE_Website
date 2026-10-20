@@ -75,8 +75,10 @@ nav a:focus-visible {
 
 .brand {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: max-content 100px;
+  column-gap: 18px;
+  flex-shrink: 0;
   line-height: 1.2;
 }
 
@@ -88,9 +90,19 @@ nav a:focus-visible {
 }
 
 .brand-affiliation {
+  grid-column: 1;
   font-size: 11px;
   color: var(--muted);
   margin-top: 5px;
+}
+
+.brand-logo {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  display: block;
+  width: 100px;
+  height: auto;
 }
 
 nav {
@@ -248,7 +260,7 @@ nav a:hover,
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
   gap: 20px;
 }
 
@@ -258,6 +270,37 @@ nav a:hover,
   border-radius: 8px;
   background: #fff;
   overflow-wrap: anywhere;
+}
+
+.person-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.person-photo-frame {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.person-photo-zoom {
+  transform: scale(1.4);
+  transform-origin: 50% 25%;
+}
+
+/* Crop the supplied decorative borders within the shared square frame. */
+.person-photo-david {
+  transform: scale(1.32);
+  transform-origin: 28% 24%;
+}
+
+.person-photo-carmen {
+  transform: scale(1.32);
+  transform-origin: 30% 33%;
 }
 
 .person-photo-placeholder {
