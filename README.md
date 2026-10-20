@@ -18,7 +18,7 @@ The website uses only HTML and CSS. No installation, build step, or external dep
 
 ## Local development
 
-1. Clone `https://github.com/fersa/mlce-website.git`, or open your existing checkout.
+1. Clone `https://github.com/cimnemadrid/MLCE_Website.git`, or open your existing checkout.
 2. Open `index.html` directly in a web browser.
 3. Edit the HTML or CSS in your preferred text editor, save, and refresh the browser.
 
@@ -37,7 +37,7 @@ Navigation links use relative filenames such as `people.html`; the skip link use
 
 ## Publish to GitHub Pages
 
-Repository: [fersa/mlce-website](https://github.com/fersa/mlce-website).
+Repository: [cimnemadrid/MLCE_Website](https://github.com/cimnemadrid/MLCE_Website).
 
 1. In the repository, open **Settings -> Pages**.
 2. Under **Build and deployment**, choose **Deploy from a branch**.
@@ -45,7 +45,7 @@ Repository: [fersa/mlce-website](https://github.com/fersa/mlce-website).
 4. When ready to publish reviewed changes, commit them and push to `main`. GitHub Pages publishes updates from that branch automatically.
 5. Check the deployment status in the repository's **Actions** tab and the published URL in **Settings -> Pages**.
 
-Expected website address: [fersa.github.io/mlce-website](https://fersa.github.io/mlce-website/).
+Expected website address: [cimnemadrid.github.io/MLCE_Website](https://cimnemadrid.github.io/MLCE_Website/).
 
 Local edits do not publish until committed and pushed to the publishing branch. No custom workflow or build tooling is needed for this setup.
 
