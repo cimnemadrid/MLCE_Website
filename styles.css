@@ -281,6 +281,10 @@ nav a:hover,
   border-radius: 5px;
 }
 
+.person-photo-rafael {
+  object-position: center 20%;
+}
+
 .person-photo-frame {
   aspect-ratio: 1;
   overflow: hidden;
