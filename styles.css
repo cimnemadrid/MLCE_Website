@@ -285,6 +285,14 @@ nav a:hover,
   object-position: center 20%;
 }
 
+.person-photo-caterina {
+  object-position: center 15%;
+}
+
+.person-photo-shakib {
+  object-position: center top;
+}
+
 .person-photo-frame {
   aspect-ratio: 1;
   overflow: hidden;

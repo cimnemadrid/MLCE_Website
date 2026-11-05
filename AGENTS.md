@@ -89,4 +89,4 @@ Use the group's CIMNE research page, Fernando Salazar's personal academic websit
 
 Reference URLs:
 - https://cimne.com/research/research-clusters/machine-learning-and-models-in-hydro-environmental-engineering/machine-learning-in-civil-engineering/
-- https://sites.google.com/view/fernando-salazar-gonzalez
+- https://fersa.github.io/fsalazarcimne/
