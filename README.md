@@ -5,7 +5,7 @@ Static website for the Machine Learning in Civil Engineering (MLCE) group at CIM
 ## File structure
 
 - `index.html`: Home, group identity, About Us and three Research Areas.
-- `research.html`: Methods & Technologies.
+- `research.html`: research topics organized by application area (Dams, Environmental Engineering, Industrial Engineering).
 - `people.html`: Researchers and PhD Students.
 - `projects.html`: Selected Projects.
 - `publications.html`: Selected Publications and academic profile links.

@@ -231,23 +231,6 @@ nav a:hover,
   margin: 0;
 }
 
-.methods {
-  padding: 26px 30px;
-  background: var(--pale);
-  border-left: 3px solid var(--blue);
-  margin-top: 32px;
-}
-
-.methods p {
-  color: #526675;
-  margin: 6px 0 0;
-}
-
-.methods h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
 .muted {
   color: var(--muted);
 }
@@ -291,6 +274,11 @@ nav a:hover,
 
 .person-photo-shakib {
   object-position: center top;
+}
+
+.person-photo-frosina,
+.person-photo-stevcho {
+  object-position: center 10%;
 }
 
 .person-photo-frame {
@@ -373,8 +361,20 @@ nav a:hover,
 .flag-bo { background: linear-gradient(#d52b1e 33.33%, #f9e300 0 66.67%, #007934 0); }
 .flag-co { background: linear-gradient(#fcd116 50%, #003893 0 75%, #ce1126 0); }
 .flag-es { background: linear-gradient(#aa151b 25%, #f1bf00 0 75%, #aa151b 0); }
+.flag-es-ga { background: linear-gradient(to top right, #fff 41%, #0099d6 0 59%, #fff 0); }
 .flag-ir { background: linear-gradient(#239f40 33.33%, #fff 0 66.67%, #da0000 0); }
+.flag-mk {
+  background:
+    radial-gradient(circle, #ffe600 2.4px, #d20000 2.6px 3.2px, transparent 3.4px),
+    repeating-conic-gradient(#ffe600 0 14deg, #d20000 0 45deg);
+}
 .flag-it { background: linear-gradient(90deg, #009246 33.33%, #fff 0 66.67%, #ce2b37 0); }
+.flag-pk {
+  background:
+    radial-gradient(circle at 66% 44%, #01411c 3.4px, transparent 3.6px),
+    radial-gradient(circle at 61% 50%, #fff 4px, transparent 4.2px),
+    linear-gradient(90deg, #fff 25%, #01411c 0);
+}
 .flag-pe { background: linear-gradient(90deg, #d91023 33.33%, #fff 0 66.67%, #d91023 0); }
 .flag-pt { background: linear-gradient(90deg, #006600 40%, #ff0000 0); }
 
@@ -412,6 +412,59 @@ nav a:hover,
 .project-card a:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
+}
+
+/* Research: one block per application area, with compact topic cards. */
+.research-area {
+  margin-top: 40px;
+}
+
+.research-area + .research-area {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.research-area h2 {
+  font-size: 26px;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  margin: 8px 0 12px;
+}
+
+.research-area .intro {
+  margin: 0;
+}
+
+.research-area-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.research-area-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.research-topics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.research-topics .card {
+  min-height: auto;
+  padding: 24px 26px;
+}
+
+.research-topics .card h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
 }
 
 /* Publications remain a single, naturally wrapping list at every width. */
@@ -502,6 +555,15 @@ nav a:hover,
 
   .card {
     min-height: auto;
+  }
+
+  .research-area-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .research-area-image {
+    max-width: 320px;
   }
 
   .section {

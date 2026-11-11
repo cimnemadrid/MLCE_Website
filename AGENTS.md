@@ -35,7 +35,7 @@ Do not invent specific achievements, current memberships, positions, publication
 Keep the current simple site and its main navigation:
 
 - Home (`index.html`): group identity, About Us and the three Research Areas.
-- Research (`research.html`): Methods & Technologies.
+- Research (`research.html`): research topics organized by the three application areas (Dams, Environmental Engineering, Industrial Engineering).
 - People (`people.html`): Researchers and PhD Students.
 - Projects (`projects.html`): Selected Projects.
 - Publications (`publications.html`): Selected Publications and academic profile links.
