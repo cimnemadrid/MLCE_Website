@@ -281,6 +281,10 @@ nav a:hover,
   object-position: center 10%;
 }
 
+.person-photo-aryan {
+  object-position: center 30%;
+}
+
 .person-photo-frame {
   aspect-ratio: 1;
   overflow: hidden;
