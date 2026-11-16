@@ -272,7 +272,8 @@ nav a:hover,
   object-position: center 15%;
 }
 
-.person-photo-shakib {
+.person-photo-shakib,
+.person-photo-andre {
   object-position: center top;
 }
 
